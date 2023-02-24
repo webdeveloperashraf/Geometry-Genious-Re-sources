@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genious Re-sources</title>
+    <!-- add tailwind-css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.2/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<!-- Header Section  -->
+    <!-- Navbar -->
+    <header>
+    <div class="navbar bg-base-100 lg:px-12 bg-slate-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                <a class="justify-between">
+          </div>
+          <a class=" normal-case text-2xl font-bold">Interactive <br> Geometry Genious
+        </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+        </div>
+        <div class="navbar-end">
+          <a href="Blog Project/blog.html" class="btn btn-outline">Blog</a>
+        </div>
+      </div>
+    </header>
+
+
+
+                                <!-- Geometry Re-sources Main-Section -->
+    <!-- First Card Geometry-Triangle -->
+    <main>
+      <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+        <div class="Geometry Details w-[70%] mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img src="./images/triangle.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="first-title">Triangle</h2>
+              <p>Triangle Area(A)=0.5*Base*Height</p>
+              <p>A=<span id="triangle-areas">0.5</span></p>
+              <input
+                type="text"
+                id="first-input"
+                placeholder="Type Triangle-Base"
+                class="input input-bordered input-sm w-full max-w-xs"
+              />
+              <input
+                type="text"
+                placeholder="Type Triangle-Height"
+                id="second-input"
+                class="input input-bordered input-sm w-full max-w-xs"
+              />
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary" id="first-button">Calculate</button>
+              </div>
+              </div>
+            </div>
+
+             <!-- Second Card Geometry-Rectangle -->
+                        <div class="card card-compact w-full bg-base-100 shadow-xl">
+                          <figure>
+                            <img src="./images/rectangle.png" alt="" />
+                          </figure>
+                          <div class="card-body">
+                            <h2 class="card-title" id="second-title">Rectangle</h2>
+                            <p>Rectangle Area(A)=Weight*Length</p>
+                            <input
+                              type="text"
+                              id="rectangle-input"
+                              placeholder="Type Rectangle-Weight"
+                              class="input input-bordered input-sm w-full max-w-xs"
+                            />
+                            <input
+                              type="text"
+                              placeholder="Type Rectangle-Length"
+                              id="rectangle-second-input"
+                              class="input input-bordered input-sm w-full max-w-xs"
+                            />
+                            <div class="card-actions justify-end">
+                              <button class="btn btn-primary" id="second-button">Calculate</button>
+                            </div>
+                            </div>
+                          </div>
+
+               <!-- Third Card Geometry-Parallalogram -->
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                 
+                        <figure>
+                            <img src="images/parallelogram.png"/>
+                        </figure>
+                        <div class="card-body">
+                          <h2 class="card-title" id="third-title">Parallalogram</h2>
+                          <p>Parallalogram Area(A)=Base*Height</p>
+                          <p>Base=<span id="p-base">30</span><span>cm</span></p>
+                          <p>Height=<span id="p-height">15</span><span>cm</span></p>
+                          <div class="card-actions justify-end">
+                            <button class="btn btn-primary" id="third-button">Calculate</button>
+                          </div>
+                        </div>
+                        </div>
+
+              <!-- Fourth Card Geometry-Rhombus -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl mt-6">
+                 
+                    <figure>
+                        <img src="images/Rhombus.png"/>
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title" id="fourth-title">Rhombus </h2>
+                      <p>Rhombus Area(A)=0.5*Diagonal1*Diagona2</p>
+                      <p>A=<span id="r-areas">0.5</span></p>
+                      <p>Diagonal1=<span id="r-diagonal1">20</span><span>cm</span></p>
+                      <p>Diagonal2=<span id="r-diagonal2" >10</span><span>cm</span></p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary" id="fourth-button">Calculate</button>
+                      </div>
+                    </div>
+                    </div>
+
+                <!-- Fifth Card Geometry-Pentagon -->
+                    <div class="card card-compact w-full bg-base-100 shadow-xl mt-4">
+                 
+                        <figure>
+                            <img src="images/pentagon.png"/>
+                        </figure>
+                        <div class="card-body">
+                          <h2 class="card-title" id="fifth-title">Pentagon</h2>
+                          <p>Pentagon Area(A)=0.5*Perimeter*Base Apothem</p>
+                          <p>A=<span id="pentagon-areas">0.5</span></p>
+                          <p>Perimeter=<span id="pentagon-perimeter">10</span><span>cm</span></p>
+                          <p>Base Apothem=<span id="pentagon-base-apothem">5</span><span>cm</span></p>
+                          <div class="card-actions justify-end">
+                            <button class="btn btn-primary" id="fifth-button">Calculate</button>
+                          </div>
+                        </div>
+                        </div>
+
+                      <!-- Last Card Geometry-Ellipse -->
+                        <div class="card card-compact w-full bg-base-100 shadow-xl mt-4">
+                 
+                            <figure>
+                                <img src="images/ellipse.png"/>
+                            </figure>
+                            <div class="card-body">
+                              <h2 class="card-title" id="sixth-title">Ellipse</h2>
+                              <p>Ellipse Area(A)=(π)=3.14*AxisA*AxisB</p>
+                              <p>A=(π)=<span id="ellips-areas">3.14</span></p>
+                              <p>AxisA=<span id="ellips-axis-a">40</span><span>cm</span></p>
+                              <p>AxisB=<span id="ellips-axis-b">20</span><span>cm</span></p>
+                              <div class="card-actions justify-end">
+                                <button class="btn btn-primary" id="sixth-button">Calculate
+                                </button>
+                              </div>
+                            </div>
+                            </div>     
+                  </div>
+            </div>
+         <!-- Area Calculations Section   -->
+            <div class="geomery calculations  w-full md:w-[33%] lg:w[33%]mx-auto mt-6 ml-2">
+           <h1 class="text-3xl text-center font-bold underline"> Area Calculations:
+           </h1>
+           <div class="overflow-x-auto">
+            <table class="table w-full">
+              <tbody id="table-container" class="getTableData table-data-body table-data table-body t-body">
+              </tbody>
+              </table>
+              </div>
+            </div>
+        </section>
+    </main>
+ 
+    <!-- add javascript -->
+    <script src="./index.js"></script>
+</body>
+</html>
